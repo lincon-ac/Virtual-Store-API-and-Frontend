@@ -1,0 +1,27 @@
+<h1 class="text-center my-3">Lista de Produtos</h1>
+<table class="table">
+  <div class="row">
+    <div class="col-12">
+      <thead>
+      </thead>
+      <tbody>
+        
+          <tr>
+            {{#each produto}}
+            <th><center><img src="{{this.link}}" alt="mostrar imagem" width=150 height=150><br>
+                <strong>{{this.nome}}</strong><br>
+                {{this.descricao}} <br>
+                R${{this.preco}} <br>
+                cod. Produto:{{this.id_produto}}<br>
+              <a href="/carrinho/Adicionar"><img src="https://pt.seaicons.com/wp-content/uploads/2015/06/Shopping-basket-add-icon.png" width=20 height=20 alt="mostrar imagem" /></a>
+            </th>
+              <form class="borde-0 m-0" action="/carrinho/Adicionar" method="POST">
+                <input type="hidden" name="id_produto" value={{this.id_produto}}>
+              </form>
+         {{/each}}
+          </tr>
+        
+      </tbody>
+    </div>
+  </div>
+</table>

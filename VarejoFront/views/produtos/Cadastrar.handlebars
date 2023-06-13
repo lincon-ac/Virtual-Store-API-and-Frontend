@@ -1,0 +1,46 @@
+<h1 class="text-center my-3">Sistema de Cadastro de Produtos</h1>
+<form action="/produtos/Cadastrar" method="post">
+  <div class="row w-50 d-block m-auto g-3">
+    <div class="col-12">
+      <label class="form-label" for="nome">Nome do produto:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite o nome do produto."
+      />
+    </div>
+    <div class="col-12">
+      <label class="form-label" for="descricao">Descrição do produto:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="descricao"
+        id="descricao"
+        placeholder="Digite a descrição do produto."
+      />
+    </div>
+    <div class="col-12">
+      <label class="form-label" for="preco">Preço do produto:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="preco"
+        id="preco"
+        placeholder="Digite o preço do produto."/>
+    </div>
+        <div class="col-12">
+      <label class="form-label" for="link">Link da imagem do produto:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="link"
+        id="link"
+        placeholder="Digite o link da imagem do produto."/>
+    </div>
+    <div>
+      <input class="btn btn-primary my-3" type="submit" value="Cadastrar Produto" />
+    </div>
+  </div>
+</form>
